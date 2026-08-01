@@ -3,6 +3,9 @@ import { defineConfig } from 'vite';
 export default defineConfig({
   root: '.',
   publicDir: 'public',
+  // Percorsi relativi: la stessa build funziona sia servita dalla radice del
+  // dominio sia da una sottocartella (es. GitHub Pages su /Model-Nautica/).
+  base: './',
   build: {
     outDir: 'dist',
     emptyOutDir: true,
