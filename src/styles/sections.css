@@ -47,10 +47,10 @@
   z-index: -1;
   background: linear-gradient(
     180deg,
-    rgb(3 19 31 / 62%) 0%,
-    rgb(3 19 31 / 18%) 34%,
-    rgb(3 19 31 / 42%) 72%,
-    rgb(3 19 31 / 78%) 100%
+    rgb(3 22 10 / 62%) 0%,
+    rgb(3 22 10 / 18%) 34%,
+    rgb(3 22 10 / 42%) 72%,
+    rgb(3 22 10 / 78%) 100%
   );
   pointer-events: none;
 }
@@ -69,7 +69,7 @@
   font-weight: 600;
   letter-spacing: var(--tracking-wide);
   text-transform: uppercase;
-  color: var(--foam);
+  color: var(--amber);
   margin-bottom: clamp(1rem, 2vw, 1.8rem);
 }
 .hero__eyebrow::before {
@@ -131,7 +131,7 @@
 }
 .hero__stats li {
   padding: clamp(1rem, 2vw, 1.5rem) clamp(0.8rem, 2vw, 1.5rem);
-  background: linear-gradient(180deg, rgb(3 19 31 / 30%), rgb(3 19 31 / 10%));
+  background: linear-gradient(180deg, rgb(3 22 10 / 30%), rgb(3 22 10 / 10%));
   backdrop-filter: blur(4px);
 }
 .hero__stats b {
@@ -328,7 +328,7 @@
   padding: 0.35em 0.8em;
   border-radius: 999px;
   background: color-mix(in srgb, var(--sea) 9%, transparent);
-  color: var(--sea);
+  color: var(--sea-deep);
   font-size: 0.74rem;
   font-weight: 600;
   letter-spacing: 0.03em;
@@ -458,7 +458,7 @@
   margin-block: clamp(2rem, 5vw, 3.5rem);
   padding: clamp(2rem, 5vw, 4rem) clamp(1.2rem, 4vw, 3rem);
   border-radius: var(--radius-xl);
-  background: linear-gradient(160deg, #0b3446, #072433 60%, #0d5f6b);
+  background: linear-gradient(160deg, #0b4a24, #063318 60%, #0c6b31);
   color: var(--shell);
   overflow: hidden;
 }
@@ -467,7 +467,7 @@
   position: absolute;
   inset: auto -10% -30% -10%;
   height: 60%;
-  background: radial-gradient(60% 100% at 50% 0%, rgb(47 181 176 / 26%), transparent 70%);
+  background: radial-gradient(60% 100% at 50% 0%, rgb(44 184 79 / 26%), transparent 70%);
   pointer-events: none;
 }
 .fleet__tabs {
@@ -531,7 +531,7 @@
 }
 .fleet__specs div {
   padding: 1rem 1.1rem;
-  background: rgb(4 22 32 / 55%);
+  background: rgb(4 32 14 / 55%);
 }
 .fleet__specs dt {
   font-size: 0.66rem;
@@ -593,7 +593,7 @@
   position: relative;
   border-radius: var(--radius-xl);
   border: 1px solid color-mix(in srgb, var(--foam) 16%, transparent);
-  background: radial-gradient(120% 90% at 20% 10%, #0a3346, #041823 70%);
+  background: radial-gradient(120% 90% at 20% 10%, #0a4522, #04180c 70%);
   padding: clamp(1rem, 2.5vw, 1.8rem);
   overflow: hidden;
 }
@@ -625,7 +625,7 @@
   letter-spacing: 0.04em;
   fill: color-mix(in srgb, var(--foam) 88%, transparent);
   paint-order: stroke;
-  stroke: rgba(3, 19, 31, 0.85);
+  stroke: rgba(4, 32, 14, 0.85);
   stroke-width: 4px;
   stroke-linejoin: round;
   opacity: 0;
@@ -637,7 +637,7 @@
   opacity: 1;
 }
 .coast-dot.is-active circle.core {
-  fill: var(--gold);
+  fill: var(--amber);
 }
 .coast__panel {
   padding: clamp(1.6rem, 3vw, 2.4rem);
@@ -719,7 +719,7 @@
   margin-top: clamp(2rem, 4vw, 3rem);
   padding: clamp(1.5rem, 3vw, 2.2rem);
   border-radius: var(--radius-lg);
-  background: linear-gradient(120deg, color-mix(in srgb, var(--sea) 10%, transparent), color-mix(in srgb, var(--gold) 12%, transparent));
+  background: linear-gradient(120deg, color-mix(in srgb, var(--sea) 10%, transparent), color-mix(in srgb, var(--amber) 12%, transparent));
   border: 1px solid var(--line);
 }
 .parties__note p {
@@ -754,8 +754,8 @@
   place-items: center;
   font-family: var(--font-display);
   font-size: 1.9rem;
-  color: var(--shell);
-  background: var(--grad-sea);
+  color: var(--ink);
+  background: var(--grad-amber);
   box-shadow: var(--shadow);
 }
 .crew__card h3 {
@@ -767,7 +767,7 @@
   font-size: 0.72rem;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: var(--sea);
+  color: var(--sea-deep);
 }
 .crew__card p {
   color: var(--ink-soft);
@@ -916,7 +916,7 @@
   padding: 0.85rem 1rem;
   border: 1px solid color-mix(in srgb, var(--foam) 18%, transparent);
   border-radius: var(--radius-sm);
-  background: rgb(3 19 31 / 55%);
+  background: rgb(3 22 10 / 55%);
   color: var(--shell);
   font-size: 0.95rem;
   transition: border-color 0.3s var(--ease-out), background-color 0.3s;
@@ -934,7 +934,7 @@
 .field textarea:focus {
   border-color: var(--lagoon);
   outline: none;
-  background: rgb(3 19 31 / 78%);
+  background: rgb(3 22 10 / 78%);
 }
 .field select option {
   background: var(--deep);
@@ -942,7 +942,7 @@
 }
 .field.is-invalid input,
 .field.is-invalid select {
-  border-color: #e2705f;
+  border-color: var(--danger);
 }
 .form__foot {
   display: grid;
@@ -956,7 +956,7 @@
 }
 .form__error {
   font-size: 0.82rem;
-  color: #e2705f;
+  color: var(--danger);
   min-height: 1.2em;
 }
 
@@ -970,7 +970,7 @@
   padding: clamp(1.4rem, 3vw, 2rem);
   border-radius: var(--radius-lg);
   border: 1px solid color-mix(in srgb, var(--foam) 16%, transparent);
-  background: linear-gradient(120deg, rgb(15 109 128 / 22%), transparent);
+  background: linear-gradient(120deg, rgb(1 145 42 / 20%), transparent);
 }
 .map-card h4 {
   font-family: var(--font-display);
@@ -985,7 +985,7 @@
 
 /* ================= FOOTER ================= */
 .site-footer {
-  background: #020d16;
+  background: #030f07;
   color: color-mix(in srgb, var(--shell) 66%, transparent);
   padding-block: clamp(3rem, 6vw, 5rem) 2rem;
   font-size: 0.9rem;

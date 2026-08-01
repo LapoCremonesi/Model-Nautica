@@ -87,12 +87,12 @@ function mapSvg(d) {
   <svg viewBox="0 0 780 660" role="img" aria-label="Mappa illustrata della costa del Conero">
     <defs>
       <linearGradient id="landFill" x1="0" y1="0" x2="1" y2="1">
-        <stop offset="0%" stop-color="#12566a"/>
-        <stop offset="55%" stop-color="#0c3f52"/>
-        <stop offset="100%" stop-color="#0a3446"/>
+        <stop offset="0%" stop-color="#14663a"/>
+        <stop offset="55%" stop-color="#0c4a26"/>
+        <stop offset="100%" stop-color="#0a3d1f"/>
       </linearGradient>
       <pattern id="grid" width="46" height="46" patternUnits="userSpaceOnUse">
-        <path d="M46 0H0V46" fill="none" stroke="rgba(159,232,220,.07)" stroke-width="1"/>
+        <path d="M46 0H0V46" fill="none" stroke="rgba(168,231,185,.07)" stroke-width="1"/>
       </pattern>
     </defs>
 
@@ -101,28 +101,28 @@ function mapSvg(d) {
     <!-- terraferma -->
     <path fill="url(#landFill)" d="M0 0 H262 C302 92 382 122 470 192 C558 262 578 342 518 424 C468 492 392 542 336 632 L330 660 H0 Z"/>
     <!-- linea di costa -->
-    <path fill="none" stroke="#9fe8dc" stroke-width="2" stroke-opacity=".65" d="${ROUTE}"/>
+    <path fill="none" stroke="#a8e7b9" stroke-width="2" stroke-opacity=".65" d="${ROUTE}"/>
 
     <!-- rilievo del monte -->
-    <g fill="none" stroke="rgba(159,232,220,.3)" stroke-width="1.5">
+    <g fill="none" stroke="rgba(168,231,185,.3)" stroke-width="1.5">
       <path d="M96 190 C160 168 214 196 258 250"/>
       <path d="M72 264 C142 246 206 282 248 344"/>
       <path d="M110 382 C176 372 226 406 262 462"/>
     </g>
-    <text x="112" y="330" fill="rgba(159,232,220,.62)" font-size="17" letter-spacing="5" font-family="Manrope, sans-serif">MONTE CONERO</text>
+    <text x="112" y="330" fill="rgba(168,231,185,.62)" font-size="17" letter-spacing="5" font-family="Manrope, sans-serif">MONTE CONERO</text>
 
     <!-- rotta percorsa dalla barchetta -->
     <path id="coast-route" fill="none" stroke="none" d="M300 30 C348 96 424 130 508 200 C596 272 614 350 556 434 C506 502 430 552 372 636"/>
     <g class="coast-boat" opacity="0">
-      <path d="M-11 0 L11 0 L7 7 L-7 7 Z" fill="#cf9a3c"/>
-      <path d="M0 -12 L0 0 M0 -12 L8 -3 L0 -3" fill="#cf9a3c" stroke="#cf9a3c" stroke-width="1.4" stroke-linejoin="round"/>
+      <path d="M-11 0 L11 0 L7 7 L-7 7 Z" fill="#df8f56"/>
+      <path d="M0 -12 L0 0 M0 -12 L8 -3 L0 -3" fill="#df8f56" stroke="#df8f56" stroke-width="1.4" stroke-linejoin="round"/>
     </g>
 
     <!-- porto di partenza -->
     <g>
-      <circle cx="352" cy="600" r="6.5" fill="#cf9a3c"/>
-      <circle cx="352" cy="600" r="14" fill="none" stroke="#cf9a3c" stroke-opacity=".5"/>
-      <text x="374" y="605" fill="#cf9a3c" font-size="15" letter-spacing="2.6" font-family="Manrope, sans-serif">${esc(
+      <circle cx="352" cy="600" r="6.5" fill="#df8f56"/>
+      <circle cx="352" cy="600" r="14" fill="none" stroke="#df8f56" stroke-opacity=".5"/>
+      <text x="374" y="605" fill="#df8f56" font-size="15" letter-spacing="2.6" font-family="Manrope, sans-serif">${esc(
         harbourLabel()
       )}</text>
     </g>

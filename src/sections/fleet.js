@@ -12,12 +12,12 @@ function boatArt() {
   <svg viewBox="0 0 640 330" role="img" aria-label="Illustrazione della barca Stella Maris 700" class="boat">
     <defs>
       <linearGradient id="hullFill" x1="0" y1="0" x2="0" y2="1">
-        <stop offset="0%" stop-color="#0e5f6d" stop-opacity=".55"/>
-        <stop offset="100%" stop-color="#04202d" stop-opacity=".9"/>
+        <stop offset="0%" stop-color="#0a6b2e" stop-opacity=".55"/>
+        <stop offset="100%" stop-color="#042010" stop-opacity=".9"/>
       </linearGradient>
       <linearGradient id="canopyFill" x1="0" y1="0" x2="1" y2="0">
-        <stop offset="0%" stop-color="#2fb5b0" stop-opacity=".35"/>
-        <stop offset="100%" stop-color="#9fe8dc" stop-opacity=".18"/>
+        <stop offset="0%" stop-color="#2cb84f" stop-opacity=".35"/>
+        <stop offset="100%" stop-color="#a8e7b9" stop-opacity=".18"/>
       </linearGradient>
     </defs>
 
@@ -26,7 +26,7 @@ function boatArt() {
       <path fill="url(#canopyFill)" d="M150 84 C260 68 400 66 486 82 L480 96 C398 82 262 84 156 98 Z"/>
     </g>
 
-    <g class="boat__lines" fill="none" stroke="#9fe8dc" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+    <g class="boat__lines" fill="none" stroke="#a8e7b9" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
       <!-- scafo -->
       <path class="draw" d="M70 196 H556 L600 140 L610 200 C588 240 480 264 330 264 C208 264 118 242 70 212 Z"/>
       <!-- linea di galleggiamento -->
@@ -50,7 +50,7 @@ function boatArt() {
       <path class="draw" opacity=".6" d="M44 186 H66"/>
     </g>
 
-    <g class="boat__spray" fill="none" stroke="#9fe8dc" stroke-width="2" stroke-linecap="round" opacity=".5">
+    <g class="boat__spray" fill="none" stroke="#a8e7b9" stroke-width="2" stroke-linecap="round" opacity=".5">
       <path class="draw" d="M24 252 C56 264 96 270 140 272"/>
       <path class="draw" d="M40 276 C82 286 130 290 176 290"/>
     </g>

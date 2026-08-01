@@ -5,10 +5,10 @@
  */
 
 const LAYERS = [
-  { amp: 14, len: 0.0042, speed: 0.00034, y: 0.28, color: 'rgba(46,166,169,0.55)' },
-  { amp: 20, len: 0.0031, speed: -0.00027, y: 0.44, color: 'rgba(23,124,142,0.7)' },
-  { amp: 26, len: 0.0022, speed: 0.00019, y: 0.6, color: 'rgba(12,86,106,0.85)' },
-  { amp: 32, len: 0.0016, speed: -0.00013, y: 0.78, color: 'rgba(6,48,66,0.95)' },
+  { amp: 14, len: 0.0042, speed: 0.00034, y: 0.28, color: 'rgba(44,178,84,0.55)' },
+  { amp: 20, len: 0.0031, speed: -0.00027, y: 0.44, color: 'rgba(20,132,60,0.7)' },
+  { amp: 26, len: 0.0022, speed: 0.00019, y: 0.6, color: 'rgba(12,92,44,0.85)' },
+  { amp: 32, len: 0.0016, speed: -0.00013, y: 0.78, color: 'rgba(7,52,26,0.95)' },
 ];
 
 export function initSea(canvas) {
@@ -64,8 +64,9 @@ export function initSea(canvas) {
         h * layer.y +
         Math.sin(x * layer.len + time * layer.speed) * layer.amp -
         2;
+      // Riflessi caldi: il sole basso sull'acqua richiama l'arancio di marca.
       const alpha = 0.05 + 0.05 * Math.abs(Math.sin(time * 0.0009 + i));
-      ctx.fillStyle = `rgba(190,244,236,${alpha})`;
+      ctx.fillStyle = `rgba(243,205,178,${alpha})`;
       ctx.fillRect(x, y, 16 + (i % 5) * 8, 1.4);
     }
     ctx.restore();

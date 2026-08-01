@@ -31,10 +31,10 @@
 .btn--solid {
   background: var(--grad-sea);
   color: #fff;
-  box-shadow: 0 14px 30px -14px rgb(15 109 128 / 80%);
+  box-shadow: 0 14px 30px -14px rgb(1 145 42 / 50%);
 }
 .btn--solid:hover {
-  box-shadow: 0 20px 40px -14px rgb(47 181 176 / 70%);
+  box-shadow: 0 20px 40px -14px rgb(1 145 42 / 42%);
 }
 
 .btn--ghost {
@@ -423,8 +423,8 @@
 }
 .pill--accent {
   border-color: transparent;
-  background: var(--grad-sea);
-  color: #fff;
+  background: var(--grad-amber);
+  color: var(--ink);
 }
 
 /* ---------- FAB WhatsApp ---------- */
