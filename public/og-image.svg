@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#04141f"/>
+      <stop offset="45%" stop-color="#073246"/>
+      <stop offset="100%" stop-color="#1f8c8d"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#sky)"/>
+  <path d="M0 470 L120 440 L230 458 L340 400 L450 432 L560 372 L680 412 L800 356 L920 400 L1040 344 L1200 392 L1200 630 L0 630 Z" fill="#05202d" opacity=".85"/>
+  <path d="M0 520 C200 552 420 566 640 552 C860 538 1040 508 1200 470 L1200 630 L0 630 Z" fill="#031420"/>
+  <g fill="none" stroke="#9fe8dc" stroke-width="4" stroke-linecap="round" transform="translate(92,96)">
+    <path d="M22 10v34"/><circle cx="22" cy="7" r="5"/><path d="M10 20h24"/>
+    <path d="M4 38c0 10 8 16 18 16s18-6 18-16"/>
+  </g>
+  <text x="92" y="292" fill="#ffffff" font-family="Georgia, serif" font-size="86" letter-spacing="-2">Il Conero dal mare</text>
+  <text x="92" y="384" fill="#9fe8dc" font-family="Georgia, serif" font-size="86" font-style="italic" letter-spacing="-2">cambia prospettiva</text>
+  <text x="96" y="452" fill="#9fe8dc" font-family="Helvetica, Arial, sans-serif" font-size="24" letter-spacing="7">MODEL NAUTICA · NUMANA (AN)</text>
+</svg>
