@@ -85,6 +85,16 @@ Per aggiungere una caletta alla mappa servono due passaggi:
 
 ## Deploy
 
+### GitHub Pages (automatico)
+
+Il workflow `.github/workflows/deploy.yml` costruisce il sito e lo pubblica su GitHub Pages a ogni push su `main`.
+
+Perché funzioni, su GitHub va impostato **Settings → Pages → Source: GitHub Actions** (il workflow prova a farlo da solo tramite `actions/configure-pages`, ma se il repository non ha ancora Pages attivo può servire una conferma manuale).
+
+Il sito viene servito da una sottocartella (`/Model-Nautica/`): per questo `vite.config.js` usa `base: './'`, che genera percorsi relativi validi sia dalla radice di un dominio sia da una sottocartella. Se in futuro il sito viene messo su `modelnautica.com`, non serve cambiare nulla.
+
+### Altri hosting
+
 La build è statica: la cartella `dist/` può essere pubblicata su qualsiasi hosting (Netlify, Vercel, Cloudflare Pages, un bucket S3, un Apache/Nginx).
 In alternativa si può usare il server Node incluso:
 
