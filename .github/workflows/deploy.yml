@@ -39,11 +39,10 @@ jobs:
       - name: Build
         run: npm run build
 
+      # Pages va attivato una volta sola da Settings → Pages → Source: GitHub
+      # Actions. Il token del workflow non ha il permesso di farlo da solo.
       - name: Configura Pages
         uses: actions/configure-pages@v5
-        with:
-          # Abilita Pages sul repository se non lo è già.
-          enablement: true
 
       - name: Carica l'artefatto
         uses: actions/upload-pages-artifact@v3
