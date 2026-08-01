@@ -1,0 +1,78 @@
+/* Design tokens: colori, tipografia, spaziature, ombre */
+
+:root {
+  /* Palette — i colori del Conero: roccia bianca, acqua smeraldo, fondale scuro */
+  --abyss: #03131f;
+  --deep: #062434;
+  --hull: #0a3145;
+  --sea: #0f6d80;
+  --lagoon: #2fb5b0;
+  --foam: #9fe8dc;
+  --sand: #e6d4b4;
+  --shell: #faf7f1;
+  --paper: #f3efe6;
+  --gold: #cf9a3c;
+  --ink: #0c1a22;
+  --ink-soft: #46606d;
+
+  /* Ruoli semantici (tema chiaro di default per le sezioni) */
+  --bg: var(--shell);
+  --bg-alt: var(--paper);
+  --fg: var(--ink);
+  --fg-muted: var(--ink-soft);
+  --line: color-mix(in srgb, var(--ink) 12%, transparent);
+  --line-strong: color-mix(in srgb, var(--ink) 22%, transparent);
+  --accent: var(--sea);
+
+  /* Gradienti */
+  --grad-sea: linear-gradient(135deg, var(--sea), var(--lagoon));
+  --grad-deep: linear-gradient(180deg, var(--abyss), var(--deep) 55%, var(--hull));
+  --grad-sky: linear-gradient(180deg, #04141f 0%, #073246 42%, #0d5f6e 72%, #1f8c8d 100%);
+
+  /* Tipografia */
+  --font-display: 'Fraunces', 'Iowan Old Style', Georgia, serif;
+  --font-body: 'Manrope', system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+  --fs-xs: 0.75rem;
+  --fs-sm: 0.875rem;
+  --fs-base: clamp(1rem, 0.96rem + 0.2vw, 1.0625rem);
+  --fs-lead: clamp(1.0625rem, 1rem + 0.45vw, 1.3125rem);
+  --fs-h3: clamp(1.25rem, 1.1rem + 0.7vw, 1.6rem);
+  --fs-h2: clamp(2rem, 1.4rem + 2.6vw, 3.7rem);
+  --fs-h1: clamp(2.5rem, 1.2rem + 5.4vw, 6.1rem);
+  --fs-mega: clamp(3.5rem, 1rem + 11vw, 11rem);
+
+  --tracking-wide: 0.22em;
+
+  /* Spaziature */
+  --shell-max: 1280px;
+  --gutter: clamp(1.25rem, 4vw, 3.5rem);
+  --space-section: clamp(4.5rem, 9vw, 9.5rem);
+  --radius-sm: 8px;
+  --radius: 16px;
+  --radius-lg: 26px;
+  --radius-xl: 38px;
+
+  /* Ombre */
+  --shadow-sm: 0 2px 10px rgb(3 19 31 / 6%);
+  --shadow: 0 18px 44px -22px rgb(3 19 31 / 32%);
+  --shadow-lg: 0 40px 90px -40px rgb(3 19 31 / 46%);
+
+  /* Movimento */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur: 0.5s;
+
+  --header-h: 76px;
+}
+
+/* Sezioni su fondo scuro */
+.theme-dark {
+  --bg: var(--abyss);
+  --bg-alt: var(--deep);
+  --fg: var(--shell);
+  --fg-muted: color-mix(in srgb, var(--foam) 62%, transparent);
+  --line: color-mix(in srgb, var(--foam) 16%, transparent);
+  --line-strong: color-mix(in srgb, var(--foam) 30%, transparent);
+  --accent: var(--foam);
+}
